@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    /* font-family: Arial, sans-serif; */
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color:black;
+    overflow-x: hidden;
+}
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #cf2a2a;
+            color: white;
+            padding: 24px 0;
+            text-align: center;
+            justify-content: center;
+            height: 100px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            height: 45px;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+.image h1{
+    color:azure;
+    text-align: center;
+    font-size:3rem;
+    padding-top: 100px;
+    background: rgba(0, 0, 0, 0.6);
+
+}
+
+.container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    color:black;
+}
+.text1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+.text2{
+    text-align:center;
+    padding: 5px;
+    width: 100%;
+}
+.text2 h1{
+   margin-bottom: 1px;
+   font-size:30px;
+}
+.text2 p{
+    font-size: 17px;
+    
+}
+
+.block {
+    margin:10px 0px 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    border-radius: 8px;
+    width: 100%;
+    
+}
+.text{
+    flex:1;
+    padding:60px;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px black;
+    padding:15px;
+    width: 100%;
+
+}
+
+.text p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+            line-height: 1.5;
+            text-align: center;
+}
+.text ul{
+    font-size:20px;
+    line-height: 1.5;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.image{
+    margin-top: 0px;
+    background-image: url('https://media.seniority.in/mageplaza/blog/post/ktpl_blog/main_image_-_self_defense.jpg'); /* Replace with your image path */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+img{
+    flex:2;
+    width:250px;
+    height:250px;
+    display:block;
+    margin:60px;
+    border-radius: 10px;
+}
+
+.block h2 {
+    color:red;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.block p {
+    margin: 10px 0;
+}
+.ques{
+    margin-left: 200px;
+}
+.faq-container {
+    max-width: 600px;
+    margin:20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.question {
+    background-color:grey;
+    color: white;
+    width:80%;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.question:hover {
+    background-color:dimgray
+}
+
+.answer {
+    display: none;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+    background-color: #f9f9f9;
+    border-radius: 0 0 4px 4px;
+    margin-right: 210px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    padding: 5px 0;
+}
+.conclude{
+    background-image: url('https://media.istockphoto.com/id/186880486/photo/self-defense.jpg?s=612x612&w=0&k=20&c=o1J6PkPrBDiSeOn3U5qH3UY74XFJT8RT9bC1SKveI7k=');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+.conclude h1{
+    color: white;
+    font-size:3rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 350px;
+    padding-top: 200px;
+    background: rgba(0, 0, 0, 0.6);
+}
+footer{
+    background-color:#333;
+    color: white;
+    height:100px;
+    text-align: center;
+    padding: 20px;
+}
+.contact{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width:768px){
+    .conclude h1{
+        padding:100px;
+    }
+    .question{
+        width:60%;
+    }
+    .answer{
+        margin-right:160px;
+    }
+    .container{
+    width: 100%;
+    height: auto;
+    }
+}
+i::after {
+    content: "|";
+    color: white;
+    margin-left:5px;
+}
+i:last-child::after {
+    content: "";
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: white;">Unleash Her Defense</h1>
+    </header>
+
+    <nav>
+        <a href="home page.html">Home</a>
+        <a href="about page.html">About</a>
+        <a href="training page.html">Training</a>
+        <a href="awareness page.html">Awareness</a>
+        <a href="contact page.html">Help</a>
+    </nav>
+
+    <div class="image">
+    <h1>"The best protection any <br>woman can have is courage to<br>self-defense"-Elizabeth Cady Stanton</h1>
+    </div>
+    <div class="container">
+        
+        <div class="block" id="about-us">
+            <div class="text1">
+            <h2></h2>
+            <p>At Unleash her defense, we are committed to empowering women by providing them with essential self-defense skills and confidence to navigate the world with safety and strength. Our mission is to educate, equip, and inspire women to protect themselves in any situation by offering comprehensive, practical self-defense training.</p>
+        <p>Women are at risk of facing dangerous situations in the streets, at work or in public transportation…also within the ‘safety’ of their homes…and this is true of all countries whether developed or undeveloped, rich or poor, industrial or agrarian!</p></div>
+            </div>
+
+        <div class="block" id="our-vision">
+            <div class="text">
+            <h2>Our Vision</h2>
+            <p>We envision a world where every woman not only feels secure but is empowered to act confidently in any situation. Our goal is to transform fear into strength by teaching women the physical and mental tools they need to protect themselves. By raising awareness and fostering a supportive community, we strive to create a society where self-defense is seen not just as a necessity but as a form of empowerment.</p></div>
+            <div>
+            <img src="https://t3.ftcdn.net/jpg/00/93/56/70/360_F_93567036_13B5r3uLzIHwBT081QJha7r9UPjBaHnR.jpg" alt="loading"></div>
+        </div>
+
+        <div class="block" id="our-mission">
+            <div>
+                <img src="https://thumbs.dreamstime.com/b/woman-raised-her-hand-dissuade-campaign-stop-violence-against-women-asian-woman-raised-her-hand-dissuade-copy-space-136240844.jpg" alt="loading"></div>
+            <div class="text">
+            <h2>Our Mission</h2>
+            <p>Our mission is to create a world where women can live without fear. We aim to provide women with the knowledge and skills necessary to defend themselves, mentally and physically, in any situation.By fostering self-confidence and raising awareness about personal safety, we strive to reduce the instances of violence against women, empowering them to take control of their own security and well-being.</p>
+            </div>
+        
+        </div>
+
+        <div class="block" id="our-values">
+            <div class="text">
+                <h2>Our Values</h2>
+            <ul>
+                <li><strong>Empowerment:</strong> We believe in the power of knowledge and skills to transform fear into confidence.</li>
+                <li><strong>Respect:</strong> We are committed to creating a respectful and inclusive environment.</li>
+                <li><strong>Safety:</strong> Safety is at the heart of everything we do.</li>
+                <li><strong>Community:</strong> We believe in building a strong, supportive community of women.</li>
+                <li><strong>Integrity:</strong> We are dedicated to providing honest, reliable, and effective self-defense techniques.</li>
+            </ul>
+        </div><div>
+            <img src="https://media.istockphoto.com/id/625736338/photo/stack-of-hands-showing-unity.jpg?s=612x612&w=0&k=20&c=20mAQjGRQ5XVKqHe2qFguqGZ4dwto6lxxinciCfnVI0=" alt="loading"></div>
+        </div>
+    </div>
+      <div class="ques">
+<div class="faq-item">
+    <button class="question">What is Women’s Self-Defense?</button>
+    <div class="answer">
+        <p>Women’s self-defense is the practice of empowering women through training in techniques that help protect themselves from potential harm. Our organization offers classes and resources tailored to the needs and challenges women face.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="question">Why is self-defense important for women?</button>
+    <div class="answer">
+        <p>Self-defense is vital for women because it equips them with the knowledge and skills to protect themselves in dangerous situations. It fosters confidence and independence, and teaches women how to respond to threats in their everyday lives.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="question">What kind of training do you offer?</button>
+    <div class="answer">
+        <p>We offer a variety of self-defense training programs, including basic self-defense techniques, situational awareness.We’ll show you the simple self defence moves you need to protect yourself - and explain how to avoid becoming a target in the first place..</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="question">Who can join the self-defense programs?</button>
+    <div class="answer">
+        <p> Our Self-Defense Women course is designed for women and girls aged above 13.We encourage anyone who wants to feel safer, more confident, and better prepared to handle challenging situations to join us.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="question">Do I need any prior experience?</button>
+    <div class="answer">
+        <p>No prior experience is necessary. We provide beginner-friendly classes where instructors will guide you step-by-step, ensuring that you feel comfortable and confident as you learn the techniques.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="question">How do I sign up for a class?</button>
+    <div class="answer">
+        <p>You can sign up for a class through our website. Visit the "Help" section, choose the program you're interested in, and complete the registration process online. We also offer in-person sign-ups at our training centers.</p>
+    </div>
+</div></div>
+    <div class="conclude">
+        <h1>"EMPOWER YOURSELF,<br> LEARN SELF-DEFENSE TODAY"</h1>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body><div class="contact">
+<h2>Contact Us</h2>
+<h4>Email: info@UnleasHerDefense.com</h4>
+<h4>Phone: (123) 456-7890</h4></div>
+<footer>
+    <h3>© 2024 Women's Self-Defense Awareness. All rights reserved.</h3>
+    <i class="fa-brands fa-square-facebook" style="font-size:25px;"></i>
+    <i class="fa-brands fa-square-x-twitter" style="font-size:25px;"></i>
+    <i class="fa-brands fa-square-instagram" style="font-size:25px;"></i>
+    <i class="fa-brands fa-pinterest" style="font-size:25px;"></i>
+    <i class="fa-brands fa-linkedin" style="font-size:25px;"></i>
+</footer>
+<script >
+    const questions = document.querySelectorAll('.question');
+questions.forEach(question => {
+    question.addEventListener('click', () => {
+        question.classList.toggle('active');
+        const answer = question.nextElementSibling;
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+    });
+});
+</script>
+<!-- Code injected

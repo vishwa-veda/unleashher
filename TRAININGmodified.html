@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Women's Self-Defense Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        .logo img{
+            float: left;
+            margin-left: 20px;
+            margin-top: 0px;
+            width:150px;
+            height: 50px;
+        }
+         .navig{
+            display: flex;
+            justify-content: right;
+            overflow: hidden;
+            color: white;
+            text-decoration: none;
+            margin-top: 3px;
+        }
+        .navig a {
+            color: #f2f2f2;
+            text-align: center;
+            margin-top: 0px;
+            margin-right:20px;
+            padding: 20px 15px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .navig a:hover{
+            background-color: red;
+            color: white;
+            border-radius: 30%;
+        }
+        section {
+            padding: 15px;
+        }
+        .heading{
+            text-align: center;
+            padding-left: 3px;
+
+        }
+        #heading h2{
+            font-size: 32px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        #heading p{
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .hero {
+            background-image: url("https://t3.ftcdn.net/jpg/02/49/85/28/360_F_249852856_ca6WNZoIGb4Igpd5gWZioXWaTCzJizGB.jpg");
+            background-size: auto;
+            padding: 150px;
+            color: whitesmoke;
+            text-align: center;
+        }
+        .hero h1 {
+            
+            font-size: 6em;
+        }
+        .hero p{
+            font-size: 36px;
+        }
+        .common-threats ul{
+            font-size: xx-large;
+        }
+        .success-stories {
+            margin: 10px 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .container img{
+            width: 40%;
+            height: auto;
+            border-radius: 60px;
+        }
+        .container1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container1 img{
+            height: 30%;
+            width: 30%;
+
+        }
+        @media screen and (max-width: 500px) {
+            .container1 {
+                flex-direction:column;
+            }
+
+            .container1 img, .class-instructors1{
+                max-width: 100%;
+            }
+        }    
+        .class-instructors{
+            max-width: 100%;
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+        .class-instructors1 p{
+            font-size: 1.1em;
+            line-height: 1.6;
+            flex-wrap: wrap;
+            align-items: center;
+            display: flex;
+            max-width: 50%;
+            padding: 10px;
+
+        }
+    
+        .story {
+            max-width: 56%;
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+        .story h2{
+            font-size: 2em;
+            color: rgb(206, 50, 50)
+        }
+        .story p{
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .story1{
+            max-width: 55%;
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+        .story1 h2{
+            font-size: 2em;
+            color: rgb(206, 50, 50)
+        }
+        .story1 p{
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .story3{
+            max-width: 55%;
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+        .story3 h2{
+            font-size: 2em;
+            color: rgb(206, 50, 50)
+        }
+        .story3 p{
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+    .gallery {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 300px;
+      height:300px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <dir class="logo">
+            <img src="UNLEASH HER DEFENSE LOGO.png" alt="self-defense" height="70px" width="70px">
+        </dir>
+        <nav class="navig">
+            <a href="home page.html">Home</a>
+            <a href="about page.html">About</a>
+            <a href="TRAININGmodified.html">Training</a>
+            <a href="awareness page.html">Awareness</a>
+            <a href="contact page.html">Help</a>
+        </nav>
+        </section>
+
+    <section class="hero">
+        <h1>Self defense is natures eldest law</h1>
+        <p>Empower, Protect, and Defend Yourself with Confidence.</p>
+    </section>
+
+    <section id="heading" style="text-align: center;background-color: antiquewhite;border-radius: 15px;">
+        <h2 style="text-align: center;color:rgb(184, 8, 8);">Welcome to Unleash her Defense.</h2>
+        <p> At Unleash her Defense, we provide comprehensive self-defense training tailored specifically for women. Our mission is to empower women by teaching practical skills to help protect themselves in any situation. Join our community of strong, confident women and take control of your safety!
+
+        </p>
+    </section>
+    <section id="threats" class="common-threats">
+        <h2 style="color: red;font-style: oblique;font-size: 35px;">Why Self-Defense?</h2>
+        <p style="font-size: 25px;"><strong>In today's world, safety is a top priority. Our self-defense classes teach you how to:</strong></p>
+        <ul type="." style="color: white; font-size:20px;">
+            <li>Recognize and avoid dangerous situations.</li>
+            <li>Use practical techniques to defend yourself effectively.</li>
+            <li>Build confidence in your ability to protect yourself.</li>
+            <li>Increase your situational awareness.</li>
+        </ul>
+    </section> 
+    <section id="threats" class="common-threats">
+        <h2 style="color: red; font-style: oblique;font-size: 40px;">Programs We Offer:</h2>
+        <p style="font-size: x-large;">We provide a range of self-defense courses to suit your needs:</p>
+        <p style="font-size: 25px;color: white;"><strong>1. Basic Self-Defense Course:</strong></p>
+        <p style="font-size: 20px;"><strong></strong></p>
+        <ul>
+            <li style="font-size: 20px;color: white;">Duration: 4 weeks</li><br>
+            <li style="font-size: 20px;color: white;">Focus: Foundational skills, awareness, and basic self-defense techniques. </li><br>
+        </ul>
+        <p style="font-size: 25px;color: white;"><strong>2. Advanced Self-Defense Course:</strong></p>
+        <p style="font-size: 20px;"><strong></strong></p>
+        <ul>
+            <li style="font-size: 20px;color: white;">Duration: 6 weeks</li><br>
+            <li style="font-size: 20px;color: white;">Focus: Advanced combat techniques, ground defense, and weapon defense.</li><br>
+            
+        </ul>
+        <p style="font-size: 25px;color: white;"><strong>3. One-Day Intensive Workshop:</strong></p>
+        
+        <ul>
+            <li style="font-size: 20px;color: white;">Duration: 1 day (8 hours)</li><br>
+            <li style="font-size: 20px;color: white;">Focus: A fast-paced, hands-on workshop covering essential self-defense techniques.</li><br>
+        </ul>
+        <p style="font-size: 25px;color: white;"><strong>4.Self-Defense for Teens:</strong></p>
+        
+        <ul>
+            <li style="font-size: 20px;color: white;">Duration: 4 weeks</li><br>
+            <li style="font-size: 20px;color: white;">Focus: Empowering young girls with age-appropriate self-defense skills.</li><br>
+        </ul><br>
+        <section id="instructors" class="class-instructors">
+            <h2 style="color: red;font-style: oblique;font-size: 43px;">Meet Our Instructors</h2>
+            <p style="font-size: 25px;"><strong>Our team consists of experienced self-defense trainers and martial arts experts with backgrounds in:</strong></p>
+            <div class="container1">
+                <img src="https://kadathanadankalari.in/wp-content/uploads/2024/03/IMG_5845-1-1-1024x1024.jpg" >
+                <div class="class-instructors1">
+                    <h2 style="font-style: italic;">Krav Maga</h2>
+                </div>
+            </div>
+            <div class="container1">
+                <img src="https://www.bjjindia.in/wp-content/uploads/2015/07/Brazilian-Jiu-Jitsu-India-Delhi-Women-Self-Defense-2.jpg" >
+                <div class="class-instructors1">
+                    <h2 style="font-style: italic;">Brazilian Jiu-Jitsu</h2>
+                </div>
+            </div>
+            <div class="container1">
+                <img src="https://www.beautifulnews.com/sites/default/files/styles/thumbnail/public/story/image/JDI06749.jpg?h=98013798&itok=6xoQ4Uln" >
+                <div class="class-instructors1">
+                    <h2 style="font-style: italic;">Muay Thai</h2>
+                </div>
+            </div>
+            <div class="container1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr5-6tygTUPeZ6a6U2WAM5uV2EmeC9EKBlh_gfs4LQ4TrrlwTeXipRFLKCfNNeV1ZPX8E&usqp=CAU" >
+                <div class="class-instructors1">
+                    <h2 style="font-style: italic;">Kickboxing</h2>
+                </div>
+            </div>
+            <p style="font-size: 25px;">All instructors are passionate about helping women develop the confidence and skills needed for personal safety.</p>
+        </section> 
+        <section id="testimonials" class="program-testimonals" style="background-color: white;">
+            <h2 style="font-size: 43px;color: rgb(128, 0, 60);border-radius:30px;">Testimonials</h2>
+            <p style="font-size: 23px;">"I never realized how much confidence self-defense training would give me. The techniques are easy to learn, and now I feel much more secure in my daily life." — Sarah L.</p>
+            <p style="font-size: 23px;">"This program changed the way I think about my personal safety. Every woman should take these classes!" — Emily J. </p>
+        </section>
+
+    <section id="postures" class="training-gestures">
+        <h1 style="text-align: center;font-size:50px;color: red;">Self-Defense Tactics</h1>
+        <div class="container">
+            <img src="https://media.post.rvohealth.io/wp-content/uploads/2023/08/Groin-kick.gif" alt="Groin Kick">
+            <div class="story">
+                <h2 style="font-style: italic;">Groin Kick </h2>
+                <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;"><i>A groin kick is a self-defense technique that can temporarily disable an attacker and make it easier to escape..</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="story1">
+                <h2 style="font-style: italic;">Heel-palm-strike</h2>
+                <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;"><i>Palm heel strike may be a very effective tool in self defense, even more so than closed first technique.</i>
+                </p>
+            </div>
+            <img src="https://media.post.rvohealth.io/wp-content/uploads/2023/08/Heel-palm-strike.gif" alt="Heel-palm-strike">
+        </div>
+        <div class="container">
+            <img src="https://i.pinimg.com/originals/73/c3/c5/73c3c5d8b713ff0cff33c0a9e30fcfe6.gif" alt="Arm grab" >
+            <div class="story">
+                <h2 style="font-style: italic;">Arm Grab</h2>
+                <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;"><i>The arm grab is used to try and control or intimidate you.</i>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="story3">
+                <h2 style="font-style: italic;">Hair Grab</h2>
+                <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;"><i>A hair grab technique is a self-defense move that can be used to counter an attacker who grabs your hair.</i>
+                </p>
+            </div>
+            <img src="https://i.pinimg.com/originals/52/86/23/5286230934ef75f515410334b04702ad.gif" alt="hair grab">
+        </div>
+        <div class="container">
+            <img src="https://i.pinimg.com/originals/e0/ca/40/e0ca40c57b06ad2ae3cc4e29cb9bd2f6.gif" alt="Alternate Elbow Strike" >
+            <div class="story">
+                <h2 style="font-style: italic;">Alternate Elbow Strike</h2>
+                <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px;"><i>A powerful technique that can knock someone down or out if it lands cleanly.</i>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 style="font-size:40px;font-family: Arial, Helvetica, sans-serif;color: red;">FAQs</h2>
+        <p style="font-size: 20px;color: white;"><strong>1. Do I need any prior experience?</strong><br>
+            No, our classes are designed for beginners and advanced practitioners alike.</p>
+        <p style="font-size: 20px;color: white;"><strong>2.What should I wear to class?</strong><br>
+            Wear comfortable clothing and athletic shoes. All equipment will be provided.</p>
+        <p style="font-size: 20px;color: white;"><strong>3. Is the training safe?</strong><br> 
+        Yes, our instructors prioritize safety while ensuring you learn effective techniques.</p>   
+    </section>
+    <section id="gallery" class="section">
+        <h2 style="color: white;">Photo Gallery</h2>
+        <div class="gallery">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzzfrJaOx1GcM5na6KHEWT5rWIocDmbxWZ5w&s" alt="Self-defense class photo">
+          <img src="https://th-i.thgim.com/public/news/cities/Delhi/bf9i6y/article36412607.ece/alternates/FREE_1200/spuwac-training-program" alt="Demonstration of a tactic">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNJQR_aKjsvkRz_4S-R3aK6L1K7qX0PyvndA&s" alt="Group training session">
+          
+        </div>
+      </section>
+
+
+    <section id="contact">
+        <h1 style="text-align: center;font-size: xx-large;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: white;">Get Started with Self-Defense Today!</h1>
+        <h2><a href="contact.html" style="color: red;" target="_blank">Sign Up for a Class Today!</a></h2>
+        <p style="font-size: x-large;color: white;">Contact us to schedule your first class or learn more about our programs</p>
+        <p style="font-size: 28px;color: white;">Phone: (123) 456-7890</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Women's Self-Defense Awareness. All rights reserved.</p>
+        <i class="fa-brands fa-square-facebook" style="font-size: 25px;"> |</i>
+        <i class="fa-brands fa-square-x-twitter" style="font-size: 25px;"> |</i>
+        <i class="fa-brands fa-square-instagram" style="font-size: 25px;"> |</i>
+        <i class="fa-brands fa-pinterest" style="font-size: 25px;"> |</i>
+        <i class="fa-brands fa-linkedin" style="font-size: 25px;"></i>
+    </footer>
+</body>
+</html>
+
